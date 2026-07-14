@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-fade-in: fade-in 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  --color-brand-bg: #05070a;
+  --color-brand-sidebar: #080b11;
+  --color-brand-accent: #2563eb;
+  --color-brand-accent-glow: rgba(37, 99, 235, 0.4);
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Base scrollbar styling for immersive theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #05070a;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(37, 99, 235, 0.3);
+}
+
+body {
+  background-color: #05070a;
+  color: #cbd5e1;
+}

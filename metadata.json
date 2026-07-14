@@ -1,0 +1,6 @@
+{
+  "name": "English Conversational Coach",
+  "description": "An interactive full-stack AI agent to practice English conversational fluency with real-time feedback, speech-to-text, audio pronunciation, and a performance dashboard.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
